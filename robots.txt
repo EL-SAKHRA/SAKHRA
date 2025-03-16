@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://elsakhra.github.io/sitemap.xml
+Sitemap: https://elsakhra.github.io/SAKHRA/sitemap.xml
