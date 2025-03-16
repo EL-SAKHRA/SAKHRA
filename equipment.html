@@ -4,13 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog - UpConstruction Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <head>
+    <title>EL SAKHRA - Equipment</title>
+    <meta name="description" content="ELSAKHRA is your trusted source for buying and renting heavy equipment, including excavators, loaders, bulldozers, and cranes at the best prices. | ELSAKHRA هو موقعك الموثوق لبيع وتأجير المعدات الثقيلة مثل الحفارات، اللوادر، الجرافات، والرافعات بأفضل الأسعار.">
+    <meta name="keywords" content="heavy equipment, excavators for sale, loader rental, construction machinery, bulldozers, cranes, معدات ثقيلة, بيع حفارات, تأجير لوادر, معدات بناء, جرافات للبيع, قطع غيار معدات ثقيلة">
+    <meta name="author" content="ELSAKHRA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="EL SAKHRA - Heavy Equipment Sales & Rentals | بيع وتأجير المعدات الثقيلة">
+    <meta property="og:description" content="Get the best deals on high-quality heavy equipment for sale and rent. | احصل على أفضل المعدات الثقيلة للبيع والتأجير بأسعار تنافسية.">
+    <meta property="og:image" content="https://elsakhra.github.io/SAKHRA/assets/img/logo-hero.png">
+    <meta property="og:url" content="https://elsakhra.github.io/SAKHRA/">
+    
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
+</head>
+
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.jpeg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,7 +42,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-
 </head>
 
 <body class="blog-page">
@@ -38,33 +51,30 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="" style="border-radius: 20px; width: 150px; height: 50px;">
-        <h1 class="sitename"> <span style="color: yellow;">EL</span> SAKHRA</h1> <span>.</span>
+        <img src="assets/img/logo.png" alt="" style="border-radius: 20px; width: 100px; height: 60px;">
+        <h1 class="sitename"> <span style="color: #F8D132">EL</span> SAKHRA</h1> <span>.</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" >Home</a></li>
+          
+          <li><a href="Parts.html">Parts</a></li>
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>MAINTENANCE</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#">CRUSHERS</a></li>
+                  <li><a href="#">industrial</a></li>
+                  <li><a href="#">concrete pump</a></li>
+                  <li><a href="#">EARTH moving</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#">METAL FABRICATION</a></li>
+             
             </ul>
           </li>
-          <li><a href="Parts.html">Parts</a></li>
-          <li><a href="equipment.html"class="active">Equipment</a></li>
-          <li><a href="comec.html">comec</a></li>
+          <li><a href="equipment.html" class="active">Equipment</a></li>
           <li><a href="blog.html">blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -76,15 +86,130 @@
   </header>
 
   <main class="main">
+<style>
+  /*------------------------------------------------------------------
+ equpiment page 
+ --------------------------------------------------------------------*/
+ /* From Uiverse.io by mrhyddenn */ 
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+.card_box {
+width: 25%;
+min-height: 300px;
+border-radius: 20px;
+background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+position: relative;
+box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+cursor: pointer;
+transition: all .3s;
+margin: 0 20PX;
+}
+
+
+
+.card_box span {
+position: absolute;
+overflow: hidden;
+width: 150px;
+min-height: 150px;
+top: -10px;
+left: -10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card_box span::before {
+content: ' ';
+position: absolute;
+width: 150%;
+min-height: 40px;
+background: url('assets/img/looooo.png') center/50px auto no-repeat, 
+         linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+
+
+background-size: cover, cover; /* الأول للتدرج، الثاني للصورة */
+background-position: center, center;
+background-repeat: no-repeat, no-repeat;
+transform: rotate(-45deg) translateY(-20px);
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+
+.card_box span::after {
+content: '';
+position: absolute;
+width: 10px;
+bottom: 0;
+left: 0;
+height: 10px;
+z-index: -1;
+box-shadow: 140px -140px #cc3f47;
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+.card_box h2{
+color: #F09819;
+text-align: center;
+padding: 5px;
+}
+  @media (max-width: 768px) {
+.container {
+ flex-direction: column;
+ align-items: center;
+}
+
+.card_box {
+ width: 80%;
+ margin: 10px auto;
+ min-height: 400px !important;
+}
+.card_box img{
+ width: 96% !important;
+ height: 350px;
+ margin: 10px 2%;
+}
+}
+@media (max-width: 991px) { 
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودان فقط */
+    gap: 20px; /* مسافة بين الكروت */
+    justify-content: center;
+  }
+
+  .card_box {
+    width: 100%; /* كل كارد يأخذ عرض العمود بالكامل */
+    min-height: 400px !important;
+  }
+
+  .card_box img {
+    width: 96% !important;
+    height: 350px;
+    margin: 10px 2%;
+  }
+}
+
+@media (max-width: 768px) { 
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* كارد واحد في كل صف للهواتف */
+  }
+}
+</style>
     <!-- Page Title -->
     <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
       <div class="container position-relative">
-        <h1>Blog</h1>
+        <h1>Equipment</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Blog</li>
+            <li><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home</a></li>
+            <li class="current">Equipment</li>
           </ol>
         </nav>
       </div>
@@ -92,223 +217,63 @@
 
     <!-- Blog Posts Section -->
     <section id="blog-posts" class="blog-posts section">
+<!-- From Uiverse.io by mrhyddenn --> 
+<div class="container">
 
-      <div class="container">
-        <div class="row gy-4">
+  <div class="card_box" data-aos="fade-up"data-aos-delay="100" >
+    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
+  <div class="card_box" data-aos="fade-up"data-aos-delay="200" >
+    <img src="assets/img/blog/blog-6.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
+  
+  <div class="card_box" data-aos="fade-up"data-aos-delay="300" >
+    <img src="assets/img/blog/blog-4.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
+  
+  <div class="card_box" data-aos="fade-up"data-aos-delay="400" >
+    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
+</div>
+<br> <br>
+<!-- From Uiverse.io by mrhyddenn --> 
+<div class="container">
+  <div class="card_box" data-aos="fade-up"data-aos-delay="100" >
+    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
 
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
+  <div class="card_box" data-aos="fade-up"data-aos-delay="200" >
+    <img src="assets/img/blog/blog-6.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
+  
+  <div class="card_box" data-aos="fade-up"data-aos-delay="300" >
+    <img src="assets/img/blog/blog-4.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
+  
+  <div class="card_box" data-aos="fade-up"data-aos-delay="400" >
+    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
+      <span></span>
+      <h2 >EL SAKHRA </h2>
+  </div>
 
-              <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h3>
 
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">March 19</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Nisi magni odit consequatur autem nulla dolorem</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">June 24</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <p>
-                  Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
-                <span class="post-date">August 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <p>
-                  Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Accusamus quaerat aliquam qui debitis facilis consequatur</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">John Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <p>
-                  In itaque assumenda aliquam voluptatem qui temporibus iusto nisi quia. Autem vitae quas aperiam nesciunt mollitia tempora odio omnis. Ipsa odit sit ut amet necessitatibus. Quo ullam ut corrupti autem consequuntur totam dolorem.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 07</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia White</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Expedita et temporibus eligendi enim molestiae est architecto praesentium dolores. Illo laboriosam officiis quis. Labore officia quia sit voluptatem nisi est dignissimos totam. Et voluptate et consectetur voluptatem id dolor magni impedit. Omnis dolores sit.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div>
-      </div>
-
+</div>
     </section><!-- /Blog Posts Section -->
 
     <!-- Blog Pagination Section -->

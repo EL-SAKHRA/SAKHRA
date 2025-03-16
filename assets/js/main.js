@@ -54,12 +54,17 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
+  document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.querySelector("#preloader");
+
+    window.addEventListener("load", function () {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 600); // نفس مدة الـ transition في CSS
     });
-  }
+});
+
 
   /**
    * Scroll top button
