@@ -81,9 +81,9 @@
           <li><a href="index.html" class="active">Home</a></li>
           
           <li><a href="Parts.html">Parts</a></li>
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown "><a href="#"><span class="toggle-dropdown">Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>MAINTENANCE</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="" ><span class="toggle-dropdown">MAINTENANCE</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="crushers.html">CRUSHERS</a></li>
                   <li><a href="#">industrial</a></li>
@@ -275,6 +275,7 @@
 
         <div class="swiper init-swiper"data-aos="zoom-out">
           <style>
+            
             .swiper-slide img {
   height: auto;
   max-height: 200px; /* أو أي قيمة مناسبة */
@@ -288,6 +289,10 @@
                 "delay": 3000
               },
               "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
               "pagination": {
                 "el": ".swiper-pagination",
                 "type": "bullets",
@@ -307,45 +312,53 @@
                   "spaceBetween": 80
                 },
                 "992": {
-                  "slidesPerView": 6,
+                  "slidesPerView": 5,
                   "spaceBetween": 120
                 }
               }
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a href="Parts.html#berco"><img src="assets/img/spareparts/berco.png" class="img-fluid" height="250px" alt=""></a></div>
+            <div class="swiper-slide"><a href="Parts.html#berco"><img src="assets/img/spareparts/berco.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#byg"><img src="assets/img/spareparts/BYG.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#cgr"><img src="assets/img/spareparts/cgr.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#ctp"><img src="assets/img/spareparts/ctp.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#itm"><img src="assets/img/spareparts/itm.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#itr"><img src="assets/img/spareparts/itr.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="Parts.html#berco"><img src="assets/img/spareparts/berco.png" class="img-fluid" height="250px" alt=""></a></div>
+            <div class="swiper-slide"><a href="Parts.html#berco"><img src="assets/img/spareparts/berco.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#byg"><img src="assets/img/spareparts/BYG.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#cgr"><img src="assets/img/spareparts/cgr.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#ctp"><img src="assets/img/spareparts/ctp.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#itm"><img src="assets/img/spareparts/itm.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="Parts.html#itr"><img src="assets/img/spareparts/itr.png" class="img-fluid" alt=""></a></div>
+          
           </div>
+          <br><br>
+<div class="swiper-pagination"></div>
+
+
+
         </div>
 
       </div>
 
     </section><!-- /Clients Section -->
-<br>
     <!-- ///////////////////////////////////////////////// our values section  ///////////////////////////////////////////// -->
      <!-- Section Title -->
-     <section id="get-started" class="get-started section">
+     <section id="get-started" class="get-started section" style="margin-top: -80px !important;">
 
 <div  class=" section-title">
-  <h2 data-aos="fade-down" >OUR VALUES</h2>
-  <br>
-  
+  <h2 data-aos="fade-down" >OUR VALUES</h2>  
 </div><!-- End Section Title -->
 <div class="container">
   <div class="row justify-content-between">
   <div class="d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
     <div class="content">
+      <style>
+        .content p {
+          font-size: 20px !important;
+        }
+      </style>
       <h3>VISION :-</h3>
       <p>Integrity ,Reliability , and Excellence are the 
         hallmarks of our workmanship . 
