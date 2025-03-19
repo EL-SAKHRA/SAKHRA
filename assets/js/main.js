@@ -166,26 +166,3 @@
 
 })();
   // ///////////////////////////////////////////////////////////////////////////////
-  document.addEventListener("DOMContentLoaded", function () {
-    // منع النقر بزر الفأرة الأيمن على الصفحة بالكامل
-    document.addEventListener("contextmenu", function (e) {
-      e.preventDefault();
-    });
-  
-    // منع سحب الصور
-    document.addEventListener("dragstart", function (e) {
-      if (e.target.tagName === "IMG") {
-        e.preventDefault();
-      }
-    });
-  
-    // تعطيل اختصارات F12 و Ctrl+U و Ctrl+Shift+I
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "F12" || 
-          (e.ctrlKey && e.key === "u") || 
-          (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault();
-        alert("تم تعطيل عرض المصدر لحماية المحتوى!");
-      }
-    });
-  });
