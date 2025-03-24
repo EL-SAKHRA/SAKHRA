@@ -1044,7 +1044,7 @@ section,
   box-shadow: 1px 5px 50px 10px rgba(0, 0, 0, 0.5);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  height: 300px !important;
+  height: 100%;
 }
 
 .services .service-item .icon {
