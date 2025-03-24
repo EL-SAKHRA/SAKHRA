@@ -105,29 +105,42 @@
   </header>
 
   <main class="main">
+     <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/maintenance/CONCRETE-PUMPS/bg.jpg);">
+      <div class="container position-relative">
+        <h1 style="text-transform: uppercase;">CONCRETE PUMPS        </h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">CONCRETE PUMPS            </li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+      
 <style>
   /*------------------------------------------------------------------
  equpiment page 
  --------------------------------------------------------------------*/
  /* From Uiverse.io by mrhyddenn */ 
-.container {
-display: flex;
-align-items: center;
-justify-content: center;
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* يجعل الكروت في المنتصف */
 }
+
 
 .card_box {
-width: 25%;
-min-height: 300px;
-border-radius: 20px;
-background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
-position: relative;
-box-shadow: 0 25px 50px rgba(0,0,0,0.55);
-cursor: pointer;
-transition: all .3s;
-margin: 0 20PX;
+  width: 100%; /* تأكد أن كل كارت يأخذ عرض العمود بالكامل */
+  min-height: 300px !important;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+  margin-bottom: 20px; /* يضيف مسافة بين الكروت */
 }
-
 
 
 .card_box span {
@@ -149,6 +162,7 @@ width: 150%;
 min-height: 40px;
 background: url('assets/img/looooo.png') center/50px auto no-repeat, 
          linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+         
 
 
 background-size: cover, cover; /* الأول للتدرج، الثاني للصورة */
@@ -176,7 +190,13 @@ background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%
 .card_box h2{
 color: #F09819;
 text-align: center;
+font-size: 18px;
 padding: 5px;
+}
+.card_box img{
+ width: 96% !important;
+ height: 250px;
+ margin: 10px 2%;
 }
   @media (max-width: 768px) {
 .container {
@@ -185,129 +205,71 @@ padding: 5px;
 }
 
 .card_box {
- width: 80%;
+ width: 100%;
  margin: 10px auto;
- min-height: 400px !important;
+ min-height: 250px !important;
 }
-.card_box img{
- width: 96% !important;
- height: 350px;
- margin: 10px 2%;
-}
+
 }
 @media (max-width: 991px) { 
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* عمودان فقط */
-    gap: 20px; /* مسافة بين الكروت */
-    justify-content: center;
-  }
-
-  .card_box {
-    width: 100%; /* كل كارد يأخذ عرض العمود بالكامل */
-    min-height: 400px !important;
-  }
-
   .card_box img {
-    width: 96% !important;
-    height: 350px;
-    margin: 10px 2%;
+    height: 250px; /* تصغير الصور في الشاشات الصغيرة */
   }
 }
 
-@media (max-width: 768px) { 
-  .container {
-    grid-template-columns: repeat(1, 1fr); /* كارد واحد في كل صف للهواتف */
-  }
-}
+
 </style>
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
-      <div class="container position-relative">
-        <h1>Equipment</h1> <br>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home</a></li>
-            <li class="current">Equipment</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+ 
 
     <!-- Blog Posts Section -->
     <section id="blog-posts" class="blog-posts section">
-<!-- From Uiverse.io by mrhyddenn --> 
-<div class="container">
-
-  <div class="card_box" data-aos="fade-up"data-aos-delay="100" >
-    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
-      <span></span>
-      <h2 >EL SAKHRA </h2>
-  </div>
-
-  <div class="card_box" data-aos="fade-up"data-aos-delay="200" >
-    <img src="assets/img/blog/blog-6.jpg" alt="" width="100% " height="250px">
-      <span></span>
-      <h2 >EL SAKHRA </h2>
-  </div>
-  
-  <div class="card_box" data-aos="fade-up"data-aos-delay="300" >
-    <img src="assets/img/blog/blog-4.jpg" alt="" width="100% " height="250px">
-      <span></span>
-      <h2 >EL SAKHRA </h2>
-  </div>
-  
-  <div class="card_box" data-aos="fade-up"data-aos-delay="400" >
-    <img src="assets/img/industries/Energy.jpg" alt="" width="100% " height="250px">
-      <span></span>
-      <h2 >EL SAKHRA </h2>
-  </div>
-</div>
-<br> <br>
-<!-- From Uiverse.io by mrhyddenn --> 
-<div class="container">
-  <div class="card_box" data-aos="fade-up" data-aos-delay="100" data-page="1">
-    <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
-    <span></span>
-    <h2>EL SAKHRA</h2>
-  </div>
-
-  <div class="card_box" data-aos="fade-up" data-aos-delay="200" data-page="1">
-    <img src="assets/img/blog/blog-6.jpg" alt="" width="100%" height="250px">
-    <span></span>
-    <h2>EL SAKHRA</h2>
-  </div>
-
-  <div class="card_box" data-aos="fade-up" data-aos-delay="300" data-page="2">
-    <img src="assets/img/blog/blog-4.jpg" alt="" width="100%" height="250px">
-    <span></span>
-    <h2>EL SAKHRA</h2>
-  </div>
-
-  <div class="card_box" data-aos="fade-up" data-aos-delay="400" data-page="2">
-    <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
-    <span></span>
-    <h2>EL SAKHRA</h2>
-  </div>
-</div>
-<br><br><br><br>
-<!-- Blog Pagination Section -->
-<section id="blog-pagination" class="blog-pagination section">
-  <div class="container">
-    <div class="d-flex justify-content-center">
-      <ul>
-        <li><a href="#" class="prev"><i class="bi bi-chevron-left"></i></a></li>
-        <li><a href="#" class="page-link" data-page="1">1</a></li>
-        <li><a href="#" class="page-link" data-page="2">2</a></li>
-        <li><a href="#" class="page-link" data-page="3">3</a></li>
-        <li><a href="#" class="page-link" data-page="4">4</a></li>
-        <li>...</li>
-        <li><a href="#" class="page-link" data-page="10">10</a></li>
-        <li><a href="#" class="next"><i class="bi bi-chevron-right"></i></a></li>
-      </ul>
-    </div> 
-  </div>
-</section>
+      <div class="container-fluid" >
+        <div class="row"> <!-- ✅ تأكد أن الكروت داخل row -->
+    
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card_box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
+              <span></span>
+              <h2>EL SAKHRA</h2>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card_box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
+              <span></span>
+              <h2>EL SAKHRA</h2>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card_box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
+              <span></span>
+              <h2>EL SAKHRA</h2>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card_box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
+              <span></span>
+              <h2>EL SAKHRA</h2>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card_box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/industries/Energy.jpg" alt="" width="100%" height="250px">
+              <span></span>
+              <h2>EL SAKHRA</h2>
+            </div>
+          </div>
+    
+        </div> <!-- ✅ نهاية الـ row -->
+      </div>
+    </section>
+    
 
   </main>
 
@@ -342,8 +304,8 @@ padding: 5px;
           <h4>Useful Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="service-details.html">Services</a></li>
-            <li><a href="#">Parts</a></li>
+            <li><a >Services</a></li>
+            <li><a href="Parts.html">Parts</a></li>
             
           </ul>
         </div>
@@ -361,10 +323,11 @@ padding: 5px;
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>MAINTENANCE</h4>
           <ul>
-            <li><a href="#">CRUSHERS</a></li>
-            <li><a href="#">Industrial</a></li>
-            <li><a href="#">concrete-pump</a></li>
-            <li><a href="#">EARTH moving</a></li>
+            <li><a href="crushers.html" class="active">CRUSHERS</a></li>
+            <li><a href="Industrial Equipment .html">Industrial Equipment</a></li>
+            <li><a href="CONCRETE PUMPS.html">concrete-pump</a></li>
+            <li><a href="earth moving.html">EARTH moving</a></li>
+            <li><a href="shaft-rolls.html">shaft || rolls</a></li>
           </ul>
         </div>
 
