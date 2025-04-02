@@ -177,65 +177,42 @@
 });
 
 
-
-
- // //////////////////////////////////////// protect my code ///////////////////////////////////////
- document.addEventListener("DOMContentLoaded", function () {
-  // منع النقر بزر الفأرة الأيمن
+document.addEventListener("DOMContentLoaded", function () {
+  // ✅ منع النقر بزر الفأرة الأيمن
   document.addEventListener("contextmenu", function (e) {
       e.preventDefault();
   });
 
-  // تعطيل اختصارات F12 و Ctrl+U و Ctrl+Shift+I
+  // ✅ منع سحب الصور
+  document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("dragstart", function (e) {
+          e.preventDefault();
+      });
+  });
+
+  // ✅ تعطيل اختصارات DevTools مثل F12 و Ctrl+Shift+I و Ctrl+U
   document.addEventListener("keydown", function (e) {
       if (e.key === "F12" || 
           (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || 
           (e.ctrlKey && e.key === "U")) {
           e.preventDefault();
-          alert("تم تعطيل الاختصارات لحماية الموقع!");
+          alert("🚫 تم تعطيل الاختصارات لحماية الموقع!");
       }
   });
 
-  // منع فتح Developer Tools + إخفاء جميع الملفات عند فتحه
+  // ✅ مراقبة فتح DevTools وإخفاء المحتوى أو تعطيله
   function detectDevTools() {
-      let before = new Date().getTime();
-      debugger;
-      let after = new Date().getTime();
-      if (after - before > 100) {
-          // مسح محتوى الصفحة
-          document.documentElement.innerHTML = "";
-
-          // منع تحميل الملفات الجديدة
-          let meta = document.createElement("meta");
-          meta.httpEquiv = "Content-Security-Policy";
-          meta.content = "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'";
-          document.head.appendChild(meta);
-
-          // إعادة التوجيه إلى صفحة فارغة
-          window.location.href = "about:blank";
+      // إذا كان الفرق بين أبعاد نافذة المتصفح و الأبعاد الداخلية أكبر من 200 بكسل (فتح DevTools)
+      if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+          document.body.innerHTML = "<h2 style='text-align:center; color:red;'>🚫 تم اكتشاف أدوات المطور!</h2>";
+          setTimeout(() => { window.location.href = "about:blank"; }, 1000); // إعادة التوجيه إلى صفحة فارغة
       }
   }
+  
+  // ✅ فحص مستمر على فترات (كل 1 ثانية) لمراقبة أدوات المطور
   setInterval(detectDevTools, 1000);
 
-  // منع تغيير حجم النافذة لفتح DevTools (وضع الموبايل)
-  setInterval(function () {
-      if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
-          document.documentElement.innerHTML = "";
-          window.location.href = "about:blank";
-      }
-  }, 1000);
-
-  // تعطيل console.log لمنع الفحص عبر Console
-  (function() {
-      console.log = function() {
-          document.documentElement.innerHTML = "";
-          window.location.href = "about:blank";
-      };
-      console.error = console.log;
-      console.warn = console.log;
-  })();
 });
- 
 
 
 
