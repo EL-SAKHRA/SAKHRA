@@ -1,4 +1,66 @@
 
+ // //////////////////////////////////////// protect my code ///////////////////////////////////////
+ document.addEventListener("DOMContentLoaded", function () {
+  // منع النقر بزر الفأرة الأيمن
+  document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+  });
+
+  // تعطيل اختصارات F12 و Ctrl+U و Ctrl+Shift+I
+  document.addEventListener("keydown", function (e) {
+      if (e.key === "F12" || 
+          (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || 
+          (e.ctrlKey && e.key === "U")) {
+          e.preventDefault();
+          alert("تم تعطيل الاختصارات لحماية الموقع!");
+      }
+  });
+
+  // منع فتح Developer Tools + إخفاء جميع الملفات عند فتحه
+  function detectDevTools() {
+      let before = new Date().getTime();
+      debugger;
+      let after = new Date().getTime();
+      if (after - before > 100) {
+          // مسح محتوى الصفحة
+          document.documentElement.innerHTML = "";
+
+          // منع تحميل الملفات الجديدة
+          let meta = document.createElement("meta");
+          meta.httpEquiv = "Content-Security-Policy";
+          meta.content = "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'";
+          document.head.appendChild(meta);
+
+          // إعادة التوجيه إلى صفحة فارغة
+          window.location.href = "about:blank";
+      }
+  }
+  setInterval(detectDevTools, 1000);
+
+  // منع تغيير حجم النافذة لفتح DevTools (وضع الموبايل)
+  setInterval(function () {
+      if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
+          document.documentElement.innerHTML = "";
+          window.location.href = "about:blank";
+      }
+  }, 1000);
+
+  // تعطيل console.log لمنع الفحص عبر Console
+  (function() {
+      console.log = function() {
+          document.documentElement.innerHTML = "";
+          window.location.href = "about:blank";
+      };
+      console.error = console.log;
+      console.warn = console.log;
+  })();
+});
+ 
+
+
+
+
+
 (function() {
   "use strict";
 
@@ -165,30 +227,7 @@
   new PureCounter();
 
 })();
-  // ///////////////////////////////////////////////////////////////////////////////
-  document.addEventListener("DOMContentLoaded", function () {
-    // منع النقر بزر الفأرة الأيمن على الصفحة بالكامل
-    document.addEventListener("contextmenu", function (e) {
-      e.preventDefault();
-    });
-  
-    // منع سحب الصور
-    document.addEventListener("dragstart", function (e) {
-      if (e.target.tagName === "IMG") {
-        e.preventDefault();
-      }
-    });
-  
-    // تعطيل اختصارات F12 و Ctrl+U و Ctrl+Shift+I
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "F12" || 
-          (e.ctrlKey && e.key === "u") || 
-          (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault();
-        alert("تم تعطيل عرض المصدر لحماية المحتوى!");
-      }
-    });
-  });
+ 
   // ///////////////////////////////////////////////////  target blanck ////////////////////////////////////
   document.querySelectorAll('a[href]').forEach(function(link) {
     if (!link.href.startsWith(window.location.origin)) {
